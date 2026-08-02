@@ -54,7 +54,7 @@
   border:var(--border-1);}
 .chip__icon{width:24px;height:24px;border-radius:var(--radius-sm);flex:none;}
 .intro__icon-wrap{display:flex;align-items:center;justify-content:center;}
-.intro__icon{width:100%;max-width:280px;aspect-ratio:1/1;border-radius:var(--radius-md);}
+.intro__icon{width:100%;max-width:520px;aspect-ratio:1/1;border-radius:var(--radius-md);}
 
 /* ---------- strengths (stacked statement cards) ---------- */
 .strengths{display:flex;flex-direction:column;gap:var(--space-7);}
