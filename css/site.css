@@ -59,19 +59,24 @@
   border:var(--border-1);}
 
 /* ---------- strengths (stacked statement cards) ---------- */
-.strengths{display:flex;flex-direction:column;gap:var(--space-5);}
+.strengths{display:flex;flex-direction:column;gap:var(--space-7);}
 .strength-card{background:var(--color-accent);border-radius:var(--radius-lg);
-  min-height:320px;position:relative;padding:var(--space-6) var(--space-7);
+  min-height:488px;position:relative;padding:var(--space-7) var(--space-8);
   display:grid;grid-template-columns:repeat(12,1fr);align-items:center;gap:var(--grid-gutter-lg);}
-.strength-card__badge{position:absolute;top:var(--space-6);left:var(--space-6);
+.strength-card__badge{position:absolute;top:var(--space-7);left:var(--space-7);
   background:rgba(255,255,255,.08);color:#fff;border-radius:var(--radius-circle);
-  padding:6px 16px;font-weight:var(--fw-strong);font-size:var(--fs-body-2);}
+  padding:8px 20px;font-weight:var(--fw-strong);font-size:var(--fs-body-1);}
 .strength-card__heading{grid-column:1/8;color:#fff;padding-top:var(--space-8);}
-.strength-card__heading .sub{display:block;font-weight:300;font-size:var(--fs-h2);letter-spacing:var(--display-tracking);margin-bottom:var(--space-2);}
-.strength-card__heading .main{display:block;font-weight:var(--fw-strong);font-size:var(--fs-h1);letter-spacing:var(--display-tracking);}
+.strength-card__heading .sub{display:block;font-weight:300;font-size:var(--fs-h1);letter-spacing:var(--display-tracking);margin-bottom:var(--space-3);}
+.strength-card__heading .main{display:block;font-weight:var(--fw-strong);font-size:var(--fs-display-sm);letter-spacing:var(--display-tracking);}
 .strength-card__body{grid-column:8/13;display:flex;gap:var(--space-4);align-items:flex-start;}
-.strength-card__body .dot{width:8px;height:8px;border-radius:50%;background:#fff;margin-top:10px;flex:none;}
-.strength-card__body p{color:#fff;font-weight:400;font-size:var(--fs-h3);letter-spacing:var(--display-tracking);line-height:1.35;}
+.strength-card__body .dot{width:8px;height:8px;border-radius:50%;background:#fff;margin-top:14px;flex:none;}
+.strength-card__body p{color:#fff;font-weight:400;font-size:var(--fs-h2);letter-spacing:var(--display-tracking);line-height:1.35;}
+
+/* stagger the rise-up so each card commits to its own beat as it enters view */
+.strength-card[data-reveal]{transform:translateY(56px);}
+.strength-card[data-reveal]:nth-of-type(2){transition-delay:.08s;}
+.strength-card[data-reveal]:nth-of-type(3){transition-delay:.16s;}
 
 /* ---------- news ---------- */
 .news{padding-top:var(--space-12);}
