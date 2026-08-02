@@ -64,7 +64,7 @@ the full viewport (minus gutter) on every section consistently.
         <video autoplay muted loop playsinline aria-label="NOVAIQ 브랜드 필름">
           <source src="assets/images/hero-video.mp4" type="video/mp4">
         </video>
-        <button class="hero__play" type="button" aria-label="브랜드 필름 재생">PLAY</button>
+        <p class="hero__copy">데이터가 이끄는, 다음 마케팅의 기준</p>
       </div>
     </div>
   </section>
@@ -75,11 +75,6 @@ the full viewport (minus gutter) on every section consistently.
       <div class="grid">
         <div class="gcell" style="grid-column:1/8;" data-reveal>
           <h2 class="intro__title">첫번째 데이터<br><span class="intro__title-accent">마케팅</span></h2>
-          <div class="intro__badges">
-            <span class="chip">데이터</span>
-            <span class="chip">자동화</span>
-            <span class="chip">인사이트</span>
-          </div>
         </div>
         <div class="gcell intro__media-wrap" style="grid-column:8/13;align-self:start;" data-reveal>
           <div class="intro__media">
@@ -137,26 +132,34 @@ the full viewport (minus gutter) on every section consistently.
     <div class="wrap">
       <h2 class="news__title" data-reveal>오늘을 함께하는<br>NOVAIQ의 소식</h2>
       <div class="news__list">
-        <div class="news__row" data-reveal>
-          <span class="news__cat">소식</span>
-          <span class="news__title-text">NOVAIQ, 중견 제조기업과 데이터 마케팅 파트너십 체결</span>
-          <span class="news__date">(2026.07.21)</span>
-        </div>
-        <div class="news__row" data-reveal>
-          <span class="news__cat">소식</span>
-          <span class="news__title-text">NOVAIQ, 스타트업 대상 마케팅 자동화 교육 사각지대 없앤다</span>
-          <span class="news__date">(2026.07.15)</span>
-        </div>
-        <div class="news__row" data-reveal>
-          <span class="news__cat">소식</span>
-          <span class="news__title-text">NOVAIQ, 누적 캠페인 데이터 670억 건 돌파…분석 엔진 고도화</span>
-          <span class="news__date">(2026.07.15)</span>
-        </div>
-        <div class="news__row" data-reveal>
-          <span class="news__cat">소식</span>
-          <span class="news__title-text">NOVAIQ-소상공인진흥원, 소상공인 온라인 마케팅 지원 프로젝트 실시</span>
-          <span class="news__date">(2026.07.01)</span>
-        </div>
+        <details class="news__row" data-reveal>
+          <summary class="news__summary">
+            <span class="news__title-text">NOVAIQ, 중견 제조기업과 데이터 마케팅 파트너십 체결</span>
+            <span class="news__date">(2026.07.21)</span>
+          </summary>
+          <p class="news__detail">NOVAIQ가 중견 제조기업과 데이터 기반 마케팅 협력을 위한 파트너십을 체결하고, 생산·유통 데이터를 마케팅 인사이트로 연결하는 공동 프로젝트를 시작합니다.</p>
+        </details>
+        <details class="news__row" data-reveal>
+          <summary class="news__summary">
+            <span class="news__title-text">NOVAIQ, 스타트업 대상 마케팅 자동화 교육 사각지대 없앤다</span>
+            <span class="news__date">(2026.07.15)</span>
+          </summary>
+          <p class="news__detail">초기 스타트업이 자체적으로 마케팅 자동화를 구축할 수 있도록 실무 중심 교육 프로그램을 무상으로 제공합니다.</p>
+        </details>
+        <details class="news__row" data-reveal>
+          <summary class="news__summary">
+            <span class="news__title-text">NOVAIQ, 누적 캠페인 데이터 670억 건 돌파…분석 엔진 고도화</span>
+            <span class="news__date">(2026.07.15)</span>
+          </summary>
+          <p class="news__detail">누적 분석 데이터가 670억 건을 넘어서며, 더 정교한 예측을 위해 분석 엔진의 모델 구조를 새롭게 고도화했습니다.</p>
+        </details>
+        <details class="news__row" data-reveal>
+          <summary class="news__summary">
+            <span class="news__title-text">NOVAIQ-소상공인진흥원, 소상공인 온라인 마케팅 지원 프로젝트 실시</span>
+            <span class="news__date">(2026.07.01)</span>
+          </summary>
+          <p class="news__detail">소상공인진흥원과 함께 영세 소상공인의 온라인 마케팅 진입 장벽을 낮추는 지원 프로젝트를 시작합니다.</p>
+        </details>
       </div>
     </div>
   </section>
@@ -170,20 +173,29 @@ the full viewport (minus gutter) on every section consistently.
       <div class="grid values__grid">
         <div class="gcell" style="grid-column:1/5;" data-reveal>
           <div class="value-card">
-            <p class="value-card__title">데이터 보안</p>
-            <p class="value-card__desc">고객 데이터를 안전하게 지키는 것이<br>최우선 원칙입니다</p>
+            <div class="value-card__text">
+              <p class="value-card__title">데이터 보안</p>
+              <p class="value-card__desc">고객 데이터를 안전하게 지키는 것이<br>최우선 원칙입니다</p>
+            </div>
+            <div class="value-card__media"><img src="assets/images/value-1.jpg" alt=""></div>
           </div>
         </div>
         <div class="gcell" style="grid-column:5/9;" data-reveal>
           <div class="value-card">
-            <p class="value-card__title">고객 성공</p>
-            <p class="value-card__desc">고객의 성장이 곧<br>NOVAIQ의 성장이라 믿습니다</p>
+            <div class="value-card__text">
+              <p class="value-card__title">고객 성공</p>
+              <p class="value-card__desc">고객의 성장이 곧<br>NOVAIQ의 성장이라 믿습니다</p>
+            </div>
+            <div class="value-card__media"><img src="assets/images/value-2.jpg" alt=""></div>
           </div>
         </div>
         <div class="gcell" style="grid-column:9/13;" data-reveal>
           <div class="value-card">
-            <p class="value-card__title">신뢰의 기술</p>
-            <p class="value-card__desc">투명한 알고리즘과<br>정직한 리포팅을 지향합니다</p>
+            <div class="value-card__text">
+              <p class="value-card__title">신뢰의 기술</p>
+              <p class="value-card__desc">투명한 알고리즘과<br>정직한 리포팅을 지향합니다</p>
+            </div>
+            <div class="value-card__media"><img src="assets/images/value-3.jpg" alt=""></div>
           </div>
         </div>
       </div>
