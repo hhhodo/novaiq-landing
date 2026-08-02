@@ -100,7 +100,7 @@
   border-right:2px solid var(--color-primary-900);border-bottom:2px solid var(--color-primary-900);
   transform:rotate(45deg) translate(-2px,-2px);transition:transform .25s ease;}
 .news__row[open] .news__toggle::before{transform:rotate(-135deg) translate(-2px,-2px);}
-.news__detail{padding:0 0 var(--space-6);max-width:70ch;color:var(--text-subtle);font-size:var(--fs-body-2);line-height:1.6;}
+.news__detail{padding:0 0 var(--space-6);max-width:70ch;color:var(--text-subtle);font-size:var(--fs-body-1);line-height:1.6;}
 
 /* ---------- values (dark) ---------- */
 .values{position:relative;overflow:hidden;background:#050a18;padding-block:var(--space-12);}
