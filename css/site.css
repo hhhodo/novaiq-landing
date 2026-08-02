@@ -73,10 +73,15 @@
 .strength-card__body .dot{width:8px;height:8px;border-radius:50%;background:#fff;margin-top:14px;flex:none;}
 .strength-card__body p{color:#fff;font-weight:400;font-size:var(--fs-h2);letter-spacing:var(--display-tracking);line-height:1.35;}
 
-/* stagger the rise-up so each card commits to its own beat as it enters view */
-.strength-card[data-reveal]{transform:translateY(56px);}
-.strength-card[data-reveal]:nth-of-type(2){transition-delay:.08s;}
-.strength-card[data-reveal]:nth-of-type(3){transition-delay:.16s;}
+/* one-by-one "bang" pop-in as each card enters view — overshoot slam, not a soft fade */
+.strength-card[data-reveal]{
+  opacity:0;
+  transform:translateY(120px) scale(.88);
+  transition:opacity .45s ease-out,transform .55s cubic-bezier(.2,1.4,.4,1);
+}
+.strength-card[data-reveal].is-visible{opacity:1;transform:translateY(0) scale(1);}
+.strength-card[data-reveal]:nth-of-type(2){transition-delay:.12s;}
+.strength-card[data-reveal]:nth-of-type(3){transition-delay:.24s;}
 
 /* ---------- news ---------- */
 .news{padding-top:var(--space-12);}
