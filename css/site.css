@@ -45,9 +45,10 @@
 .hero__wrap{padding-top:20px;}
 
 /* ---------- intro / history ---------- */
-.intro{position:relative;padding-top:var(--space-8);padding-bottom:var(--space-7);}
+.intro{position:relative;background:var(--color-primary-050);padding-top:var(--space-8);padding-bottom:var(--space-7);}
 .intro__title{font-size:var(--fs-display-md);font-weight:var(--fw-strong);
   line-height:var(--lh-display);letter-spacing:var(--display-tracking);color:var(--color-primary-900);}
+.intro__title-accent{color:var(--color-accent);}
 .intro__badges{display:flex;gap:var(--space-4);margin-top:var(--space-8);flex-wrap:wrap;}
 .chip{display:inline-flex;align-items:center;gap:var(--space-3);background:#fff;border-radius:var(--radius-circle);
   box-shadow:0 8px 20px rgba(0,0,0,.06);
