@@ -52,7 +52,6 @@
   box-shadow:0 8px 20px rgba(0,0,0,.06);
   padding:14px 24px;font-weight:var(--fw-strong);font-size:var(--fs-body-2);color:var(--text-default);
   border:var(--border-1);}
-.chip__icon{width:24px;height:24px;border-radius:var(--radius-sm);flex:none;}
 .intro__media-wrap{position:absolute;top:0;right:var(--gutter);width:32%;max-width:460px;
   transform:translateY(-25%) rotate(-5deg);z-index:0;}
 .intro__media{width:100%;aspect-ratio:4/3;border-radius:var(--radius-md);overflow:hidden;}
