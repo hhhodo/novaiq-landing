@@ -38,7 +38,7 @@
   display:inline-flex;align-items:center;gap:var(--space-2);background:#fff;color:var(--color-primary-900);
   border-radius:var(--radius-circle);padding:14px 22px;font-weight:var(--fw-strong);font-size:var(--fs-body-2);
   text-transform:uppercase;letter-spacing:.02em;border:none;cursor:default;}
-.hero__wrap{padding-inline:20px;padding-top:20px;}
+.hero__wrap{padding-top:20px;}
 
 /* ---------- intro / history ---------- */
 .intro{position:relative;overflow:hidden;padding-top:var(--space-13);padding-bottom:var(--space-11);}
@@ -56,7 +56,7 @@
   border:var(--border-1);}
 
 /* ---------- strengths (stacked statement cards) ---------- */
-.strengths{display:flex;flex-direction:column;gap:var(--space-5);padding-inline:20px;}
+.strengths{display:flex;flex-direction:column;gap:var(--space-5);}
 .strength-card{background:var(--color-accent);border-radius:var(--radius-lg);
   min-height:320px;position:relative;padding:var(--space-6) var(--space-7);
   display:grid;grid-template-columns:repeat(12,1fr);align-items:center;gap:var(--grid-gutter-lg);}
