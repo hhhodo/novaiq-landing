@@ -59,7 +59,7 @@
 .intro__media img{width:100%;height:100%;object-fit:cover;object-position:center;}
 
 /* faint decorative ghost copy, pushed down near the bottom of the section */
-.intro__media-ghost{position:absolute;bottom:-40px;left:56%;width:21%;max-width:300px;
+.intro__media-ghost{position:absolute;bottom:10px;left:56%;width:21%;max-width:300px;
   transform:translate(-50%,50%) rotate(-5deg);opacity:.2;z-index:0;pointer-events:none;}
 .intro__media-ghost img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:center;
   border-radius:var(--radius-md);}
