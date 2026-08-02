@@ -38,7 +38,7 @@
   display:inline-flex;align-items:center;gap:var(--space-2);background:#fff;color:var(--color-primary-900);
   border-radius:var(--radius-circle);padding:14px 22px;font-weight:var(--fw-strong);font-size:var(--fs-body-2);
   text-transform:uppercase;letter-spacing:.02em;border:none;cursor:default;}
-.hero__wrap{padding-inline:20px;padding-top:var(--space-5);}
+.hero__wrap{padding-inline:20px;padding-top:20px;}
 
 /* ---------- intro / history ---------- */
 .intro{position:relative;overflow:hidden;padding-top:var(--space-13);padding-bottom:var(--space-11);}
