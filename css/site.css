@@ -44,19 +44,15 @@
 .hero__wrap{padding-top:20px;}
 
 /* ---------- intro / history ---------- */
-.intro{position:relative;overflow:hidden;padding-top:var(--space-13);padding-bottom:var(--space-11);}
-.intro__blob{position:absolute;border-radius:999px;filter:blur(0px);z-index:0;
-  background:linear-gradient(135deg,var(--color-accent-soft) 20%,var(--color-accent) 70%);opacity:.9;}
-.intro__blob--a{width:250px;height:250px;top:60px;right:12%;transform:rotate(-45deg) scaleX(1.7);}
-.intro__blob--b{width:160px;height:160px;top:420px;right:4%;transform:rotate(30deg) scaleX(1.7);}
-.intro__title{position:relative;z-index:1;font-size:var(--fs-display-md);font-weight:var(--fw-strong);
+.intro{position:relative;padding-top:var(--space-13);padding-bottom:var(--space-11);}
+.intro__title{font-size:var(--fs-display-md);font-weight:var(--fw-strong);
   line-height:var(--lh-display);letter-spacing:var(--display-tracking);color:var(--color-primary-900);}
-.intro__media-wrap{position:relative;z-index:1;}
-.intro__media{border-radius:var(--radius-md);aspect-ratio:685/456;}
-.intro__badges{position:relative;z-index:1;display:flex;gap:var(--space-4);margin-top:var(--space-8);flex-wrap:wrap;}
-.chip{background:#fff;border-radius:var(--radius-circle);box-shadow:0 8px 20px rgba(0,0,0,.06);
+.intro__badges{display:flex;gap:var(--space-4);margin-top:var(--space-8);flex-wrap:wrap;}
+.chip{display:inline-flex;align-items:center;gap:var(--space-3);background:#fff;border-radius:var(--radius-circle);
+  box-shadow:0 8px 20px rgba(0,0,0,.06);
   padding:14px 24px;font-weight:var(--fw-strong);font-size:var(--fs-body-2);color:var(--text-default);
   border:var(--border-1);}
+.chip__icon{width:24px;height:24px;border-radius:var(--radius-sm);flex:none;}
 
 /* ---------- strengths (stacked statement cards) ---------- */
 .strengths{display:flex;flex-direction:column;gap:var(--space-7);}
