@@ -53,10 +53,16 @@
   padding:14px 24px;font-weight:var(--fw-strong);font-size:var(--fs-body-2);color:var(--text-default);
   border:var(--border-1);}
 .chip__icon{width:24px;height:24px;border-radius:var(--radius-sm);flex:none;}
-.intro__media-wrap{position:absolute;top:0;left:56%;width:21%;max-width:300px;
-  transform:translate(-50%,-50%) rotate(-5deg);opacity:.2;z-index:0;}
+.intro__media-wrap{position:absolute;top:0;right:var(--gutter);width:32%;max-width:460px;
+  transform:translateY(-25%) rotate(-5deg);z-index:0;}
 .intro__media{width:100%;aspect-ratio:4/3;border-radius:var(--radius-md);overflow:hidden;}
 .intro__media img{width:100%;height:100%;object-fit:cover;object-position:center;}
+
+/* faint decorative ghost copy, pushed down near the bottom of the section */
+.intro__media-ghost{position:absolute;bottom:-40px;left:56%;width:21%;max-width:300px;
+  transform:translate(-50%,50%) rotate(-5deg);opacity:.2;z-index:0;pointer-events:none;}
+.intro__media-ghost img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:center;
+  border-radius:var(--radius-md);}
 
 /* ---------- strengths (stacked statement cards) ---------- */
 .strengths{display:flex;flex-direction:column;gap:var(--space-7);}
@@ -127,9 +133,9 @@
   transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1);}
 [data-reveal].is-visible{opacity:1;transform:none;}
 
-/* keep the tilt/position/opacity through the reveal transition instead of snapping to transform:none, opacity:1 */
-.intro__media-wrap[data-reveal]{transform:translate(-50%,-50%) rotate(-5deg) translateY(40px);opacity:0;}
-.intro__media-wrap[data-reveal].is-visible{transform:translate(-50%,-50%) rotate(-5deg);opacity:.2;}
+/* keep the tilt through the reveal transition instead of snapping to transform:none */
+.intro__media-wrap[data-reveal]{transform:translateY(-25%) rotate(-5deg) translateY(40px);}
+.intro__media-wrap[data-reveal].is-visible{transform:translateY(-25%) rotate(-5deg);}
 
 /* ---------- responsive ---------- */
 @media (max-width:1024px){
@@ -139,6 +145,7 @@
   .intro__media-wrap{position:static;width:100%;max-width:none;margin-top:var(--space-6);opacity:1;}
   .intro__media-wrap[data-reveal]{transform:translateY(26px);opacity:0;}
   .intro__media-wrap[data-reveal].is-visible{transform:none;opacity:1;}
+  .intro__media-ghost{display:none;}
   .strength-card{grid-template-columns:1fr;text-align:left;}
   .strength-card__heading,.strength-card__body{grid-column:1/13;}
   .strength-card__heading{padding-top:var(--space-8);}
