@@ -9,6 +9,9 @@
 
 .gcell{min-width:0;}
 
+/* full-bleed section content — 100% width, gutter-only padding, no max-width cap */
+.wrap{width:100%;padding-inline:var(--gutter);}
+
 /* ---------- nav ---------- */
 .nav{position:sticky;top:0;z-index:50;background:var(--color-canvas);border-bottom:var(--border-1);}
 .nav__row{display:flex;align-items:center;justify-content:space-between;height:88px;}

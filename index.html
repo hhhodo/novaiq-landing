@@ -17,12 +17,16 @@ spacing=space-11
 Layout Declaration
 Header      — full-bleed
 Hero        — full-bleed
-Intro       — 7-5
-Strengths   — 6-6 (x3, matches reference repetition)
-News        — 1-9-2
-Values      — 4-4-4
-CTA         — full-bleed — 8-4
-Footer      — full-bleed — 7-5
+Intro       — full-bleed, 7-5
+Strengths   — full-bleed, 6-6 (x3, matches reference repetition)
+News        — full-bleed, 1-9-2
+Values      — full-bleed, 4-4-4
+CTA         — full-bleed, 8-4
+Footer      — full-bleed, 7-5
+
+All sections width:100%, no .container/.container--wide max-width cap —
+inner content uses only .wrap (gutter padding) so the 12-col grid spans
+the full viewport (minus gutter) on every section consistently.
 -->
 <!DOCTYPE html>
 <html lang="ko">
@@ -37,7 +41,7 @@ Footer      — full-bleed — 7-5
 <body>
 
 <header class="nav">
-  <div class="container nav__row">
+  <div class="wrap nav__row">
     <a href="#top" class="nav__mark">NOVAIQ</a>
     <nav class="nav__links">
       <a href="#strengths">서비스</a>
@@ -55,7 +59,7 @@ Footer      — full-bleed — 7-5
 
   <!-- ============ HERO — full-bleed ============ -->
   <section class="hero">
-    <div class="container container--wide hero__wrap">
+    <div class="wrap hero__wrap">
       <div class="hero__media">
         <div class="img" role="img" aria-label="NOVAIQ 팀이 협업하는 모습"></div>
         <button class="hero__play" type="button" aria-label="브랜드 필름 재생">PLAY</button>
@@ -65,7 +69,7 @@ Footer      — full-bleed — 7-5
 
   <!-- ============ INTRO — 7-5 ============ -->
   <section class="intro">
-    <div class="container">
+    <div class="wrap">
       <div class="intro__blob intro__blob--a" aria-hidden="true"></div>
       <div class="intro__blob intro__blob--b" aria-hidden="true"></div>
       <div class="grid">
@@ -86,7 +90,7 @@ Footer      — full-bleed — 7-5
 
   <!-- ============ STRENGTHS — 6-6 x3 ============ -->
   <section class="section" style="padding-top:0;" id="strengths">
-    <div class="container container--wide strengths">
+    <div class="wrap strengths">
       <article class="strength-card">
         <span class="strength-card__badge">01</span>
         <div class="strength-card__heading">
@@ -125,7 +129,7 @@ Footer      — full-bleed — 7-5
 
   <!-- ============ NEWS — 1-9-2 ============ -->
   <section class="section news" id="news">
-    <div class="container">
+    <div class="wrap">
       <h2 class="news__title">오늘을 함께하는<br>NOVAIQ의 소식</h2>
       <div class="news__list">
         <div class="news__row">
@@ -156,7 +160,7 @@ Footer      — full-bleed — 7-5
   <section class="values" id="values">
     <div class="values__glow values__glow--a" aria-hidden="true"></div>
     <div class="values__glow values__glow--b" aria-hidden="true"></div>
-    <div class="container container--wide">
+    <div class="wrap">
       <h2 class="values__title">지속가능한 성장으로<br>다음 스테이지를 함께합니다</h2>
       <div class="grid values__grid">
         <div class="gcell" style="grid-column:1/5;">
@@ -183,7 +187,7 @@ Footer      — full-bleed — 7-5
 
   <!-- ============ CTA — full-bleed — 8-4 ============ -->
   <section class="cta">
-    <div class="container">
+    <div class="wrap">
       <div class="grid cta__grid">
         <div class="gcell cta__heading" style="grid-column:1/9;">
           <p>준비되셨나요?<br>단 14일 만에 마케팅이 달라집니다.</p>
@@ -197,7 +201,7 @@ Footer      — full-bleed — 7-5
 
   <!-- ============ FOOTER — 7-5 ============ -->
   <footer class="footer" id="contact">
-    <div class="container">
+    <div class="wrap">
       <div class="grid footer__grid">
         <div class="gcell footer__brand" style="grid-column:1/8;">
           <p class="footer__mark">NOVAIQ</p>
