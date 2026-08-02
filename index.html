@@ -61,26 +61,28 @@ the full viewport (minus gutter) on every section consistently.
   <section class="hero">
     <div class="wrap hero__wrap">
       <div class="hero__media">
-        <div class="img" role="img" aria-label="NOVAIQ 팀이 협업하는 모습"></div>
+        <video autoplay muted loop playsinline aria-label="NOVAIQ 브랜드 필름">
+          <source src="assets/images/hero-video.mp4" type="video/mp4">
+        </video>
         <button class="hero__play" type="button" aria-label="브랜드 필름 재생">PLAY</button>
+      </div>
+      <div class="hero__image" data-reveal>
+        <img src="assets/images/intro-image.jpg" alt="NOVAIQ 팀이 협업하는 모습">
       </div>
     </div>
   </section>
 
-  <!-- ============ INTRO — 7-5 ============ -->
+  <!-- ============ INTRO — full-width ============ -->
   <section class="intro">
     <div class="wrap">
       <div class="grid">
-        <div class="gcell" style="grid-column:1/8;" data-reveal>
+        <div class="gcell" style="grid-column:1/13;" data-reveal>
           <h2 class="intro__title">첫번째 데이터<br>마케팅</h2>
           <div class="intro__badges">
             <span class="chip"><span class="img chip__icon" aria-hidden="true"></span>데이터</span>
             <span class="chip"><span class="img chip__icon" aria-hidden="true"></span>자동화</span>
             <span class="chip"><span class="img chip__icon" aria-hidden="true"></span>인사이트</span>
           </div>
-        </div>
-        <div class="gcell intro__icon-wrap" style="grid-column:8/13;" data-reveal>
-          <div class="img intro__icon" role="img" aria-label="NOVAIQ 아이콘"></div>
         </div>
       </div>
     </div>
