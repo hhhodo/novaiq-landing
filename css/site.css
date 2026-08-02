@@ -1,5 +1,12 @@
 /* NOVAIQ landing — page-specific styles. Tokens/grid come from styles.css. */
 
+:root{
+  /* brand accent — matches the Figma reference's primary blue */
+  --color-accent:#1572ed;
+  --color-accent-dark:#0e58c4;
+  --color-accent-soft:#a8ccff;
+}
+
 .gcell{min-width:0;}
 
 /* ---------- nav ---------- */
@@ -13,8 +20,8 @@
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:var(--space-2);
   border-radius:var(--radius-circle);font-weight:var(--fw-strong);font-size:var(--fs-body-2);
   padding:14px 28px;border:var(--border-2);}
-.btn--solid{background:var(--text-default);color:var(--text-default-inverse);border:2px solid var(--text-default);}
-.btn--solid:hover{background:var(--color-primary-700);}
+.btn--solid{background:var(--color-accent);color:#fff;border:2px solid var(--color-accent);}
+.btn--solid:hover{background:var(--color-accent-dark);border-color:var(--color-accent-dark);}
 .btn--outline{background:transparent;color:var(--text-default);}
 .btn--outline:hover{background:var(--color-primary-050);}
 .btn--light{background:#fff;color:var(--color-primary-900);border:2px solid #fff;}
@@ -22,9 +29,11 @@
 
 /* ---------- hero ---------- */
 .hero{position:relative;width:100%;}
-.hero__media{position:relative;width:100%;aspect-ratio:16/8.6;overflow:hidden;border-radius:var(--radius-lg);}
-.hero__media .img{width:100%;height:100%;}
-.hero__media::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(10,12,14,.35),rgba(10,12,14,.05));}
+.hero__media{position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;border-radius:var(--radius-lg);}
+.hero__media .img,
+.hero__media img,
+.hero__media video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;}
+.hero__media::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(10,12,14,.35),rgba(10,12,14,.05));pointer-events:none;}
 .hero__play{position:absolute;left:50%;bottom:var(--space-6);transform:translateX(-50%);
   display:inline-flex;align-items:center;gap:var(--space-2);background:#fff;color:var(--color-primary-900);
   border-radius:var(--radius-circle);padding:14px 22px;font-weight:var(--fw-strong);font-size:var(--fs-body-2);
@@ -34,7 +43,7 @@
 /* ---------- intro / history ---------- */
 .intro{position:relative;overflow:hidden;padding-top:var(--space-13);padding-bottom:var(--space-11);}
 .intro__blob{position:absolute;border-radius:999px;filter:blur(0px);z-index:0;
-  background:linear-gradient(135deg,var(--color-primary-200) 20%,var(--color-primary-900) 70%);opacity:.9;}
+  background:linear-gradient(135deg,var(--color-accent-soft) 20%,var(--color-accent) 70%);opacity:.9;}
 .intro__blob--a{width:250px;height:250px;top:60px;right:12%;transform:rotate(-45deg) scaleX(1.7);}
 .intro__blob--b{width:160px;height:160px;top:420px;right:4%;transform:rotate(30deg) scaleX(1.7);}
 .intro__title{position:relative;z-index:1;font-size:var(--fs-display-md);font-weight:var(--fw-strong);
@@ -48,7 +57,7 @@
 
 /* ---------- strengths (stacked statement cards) ---------- */
 .strengths{display:flex;flex-direction:column;gap:var(--space-5);padding-inline:20px;}
-.strength-card{background:var(--color-primary-900);border-radius:var(--radius-lg);
+.strength-card{background:var(--color-accent);border-radius:var(--radius-lg);
   min-height:320px;position:relative;padding:var(--space-6) var(--space-7);
   display:grid;grid-template-columns:repeat(12,1fr);align-items:center;gap:var(--grid-gutter-lg);}
 .strength-card__badge{position:absolute;top:var(--space-6);left:var(--space-6);
