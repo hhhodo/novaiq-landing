@@ -67,18 +67,18 @@
 
 /* ---------- strengths (stacked statement cards) ---------- */
 .strengths{display:flex;flex-direction:column;gap:var(--space-7);}
-.strength-card{background:var(--color-accent);border-radius:var(--radius-lg);
+.strength-card{background:var(--color-primary-050);border-radius:var(--radius-lg);
   min-height:488px;position:relative;padding:var(--space-7) var(--space-8);
   display:grid;grid-template-columns:repeat(12,1fr);align-items:center;gap:var(--grid-gutter-lg);}
 .strength-card__badge{position:absolute;top:var(--space-7);left:var(--space-7);
-  background:rgba(255,255,255,.08);color:#fff;border-radius:var(--radius-circle);
+  background:rgba(21,114,237,.1);color:var(--color-accent);border-radius:var(--radius-circle);
   padding:8px 20px;font-weight:var(--fw-strong);font-size:var(--fs-body-1);}
-.strength-card__heading{grid-column:1/8;color:#fff;padding-top:var(--space-8);}
-.strength-card__heading .sub{display:block;font-weight:300;font-size:var(--fs-h1);letter-spacing:var(--display-tracking);margin-bottom:var(--space-3);}
-.strength-card__heading .main{display:block;font-weight:var(--fw-strong);font-size:var(--fs-display-sm);letter-spacing:var(--display-tracking);}
+.strength-card__heading{grid-column:1/8;color:var(--color-primary-900);padding-top:var(--space-8);}
+.strength-card__heading .sub{display:block;font-weight:300;font-size:var(--fs-h1);letter-spacing:var(--display-tracking);margin-bottom:var(--space-3);color:var(--color-primary-900);}
+.strength-card__heading .main{display:block;font-weight:var(--fw-strong);font-size:var(--fs-display-sm);letter-spacing:var(--display-tracking);color:var(--color-accent);}
 .strength-card__body{grid-column:8/13;display:flex;gap:var(--space-4);align-items:flex-start;}
-.strength-card__body .dot{width:8px;height:8px;border-radius:50%;background:#fff;margin-top:14px;flex:none;}
-.strength-card__body p{color:#fff;font-weight:400;font-size:var(--fs-h2);letter-spacing:var(--display-tracking);line-height:1.35;}
+.strength-card__body .dot{width:8px;height:8px;border-radius:50%;background:var(--color-accent);margin-top:14px;flex:none;}
+.strength-card__body p{color:var(--color-primary-900);font-weight:400;font-size:var(--fs-h2);letter-spacing:var(--display-tracking);line-height:1.35;}
 
 /* one-by-one "bang" pop-in as each card enters view — overshoot slam, not a soft fade */
 .strength-card[data-reveal]{
