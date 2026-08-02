@@ -31,7 +31,7 @@
 .btn--light:hover{background:var(--color-primary-050);}
 
 /* ---------- hero ---------- */
-.hero{position:relative;width:100%;}
+.hero{position:relative;width:100%;z-index:1;}
 .hero__media{position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;border-radius:var(--radius-lg);}
 .hero__media .img,
 .hero__media img,
@@ -54,9 +54,8 @@
   border:var(--border-1);}
 .chip__icon{width:24px;height:24px;border-radius:var(--radius-sm);flex:none;}
 .intro__media-wrap{position:absolute;top:-180px;right:var(--gutter);width:32%;max-width:460px;
-  transform:rotate(-5deg);z-index:2;}
-.intro__media{width:100%;aspect-ratio:4/3;border-radius:var(--radius-md);overflow:hidden;
-  box-shadow:0 30px 60px rgba(0,0,0,.25);}
+  transform:rotate(-5deg);z-index:0;}
+.intro__media{width:100%;aspect-ratio:4/3;border-radius:var(--radius-md);overflow:hidden;}
 .intro__media img{width:100%;height:100%;object-fit:cover;object-position:center;}
 
 /* ---------- strengths (stacked statement cards) ---------- */
